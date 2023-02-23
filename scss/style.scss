@@ -4,10 +4,82 @@
 
 /*=============== HEADER ===============*/
 header {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    h1 {
+      color: var(--text-color);
+      font-size: 3.6rem;
+      font-style: normal;
+      font-weight: 700;
+      font-family: var(--pt-serif-font);
+      line-height: 4.7rem;
+      letter-spacing: -0.045em;
+    }
+  }
+
+  .about {
+    flex-basis: 45%;
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 2.7rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.7rem;
+    }
+  }
 }
 
 /*=============== MAIN CONTENT ===============*/
 main {
+  margin-bottom: 5rem;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .items {
+      width: 33.575rem;
+      padding: 4.9rem 6.144rem 1.7rem 3.731rem;
+      position: relative;
+
+      img {
+        width: 23.8rem;
+        margin-bottom: 1.5rem;
+        margin-right: 1rem;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 2.7rem;
+      }
+
+      p {
+        position: absolute;
+        top: 5rem;
+        right: 3.144rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+        writing-mode: vertical-rl;
+        font-family: var(--pt-serif-font);
+        text-transform: uppercase;
+      }
+    }
+
+    .items:nth-child(3n - 1) {
+      margin-top: 7.2rem;
+    }
+  }
 }
 
 /*=============== FOOTER ===============*/

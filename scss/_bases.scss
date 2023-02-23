@@ -10,9 +10,11 @@ html {
 
 body {
   min-height: 100vh;
+  padding: 8rem 26.5rem 2.4rem 24rem;
   display: grid;
   grid-template-rows: auto 2fr auto;
-  font-family: var(--space-mono-font);
+  font-style: normal;
+  font-family: var(--poppins-font);
   color: var(--text-color);
   font-size: 1.6rem;
 }

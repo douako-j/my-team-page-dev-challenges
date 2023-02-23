@@ -1,9 +1,8 @@
 :root {
-  --inconsolata-font: "Inconsolata", monospace;
+  --pt-serif-font: "PT Serif", serif;
   --montserrat-font: "Montserrat", sans-serif;
-  --space-mono-font: "Space Mono", monospace;
-  --text-color: #4f4f4f;
-  --title-color: #333333;
+  --poppins-font: "Poppins", sans-serif;
+  --text-color: #000;
 }
 
 /* Landscape phones and down */
@@ -22,9 +21,11 @@ html {
 
 body {
   min-height: 100vh;
+  padding: 8rem 26.5rem 2.4rem 24rem;
   display: grid;
   grid-template-rows: auto 2fr auto;
-  font-family: var(--space-mono-font);
+  font-style: normal;
+  font-family: var(--poppins-font);
   color: var(--text-color);
   font-size: 1.6rem;
 }
@@ -42,7 +43,74 @@ img {
 }
 
 /*=============== HEADER ===============*/
+header {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo h1 {
+  color: var(--text-color);
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  font-family: var(--pt-serif-font);
+  line-height: 4.7rem;
+  letter-spacing: -0.045em;
+}
+header .about {
+  flex-basis: 45%;
+}
+header .about h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  text-transform: uppercase;
+}
+header .about p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+
 /*=============== MAIN CONTENT ===============*/
+main {
+  margin-bottom: 5rem;
+}
+main ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main ul .items {
+  width: 33.575rem;
+  padding: 4.9rem 6.144rem 1.7rem 3.731rem;
+  position: relative;
+}
+main ul .items img {
+  width: 23.8rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+}
+main ul .items h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+}
+main ul .items p {
+  position: absolute;
+  top: 5rem;
+  right: 3.144rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  writing-mode: vertical-rl;
+  font-family: var(--pt-serif-font);
+  text-transform: uppercase;
+}
+main ul .items:nth-child(3n-1) {
+  margin-top: 7.2rem;
+}
+
 /*=============== FOOTER ===============*/
 footer {
   text-align: center;
