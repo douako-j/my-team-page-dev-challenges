@@ -29,6 +29,12 @@ body {
   color: var(--text-color);
   font-size: 1.6rem;
 }
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    padding: 7.1rem 1.707rem 2.4rem 1.2rem;
+  }
+}
 
 ul {
   list-style: none;
@@ -44,6 +50,8 @@ img {
 
 /*=============== HEADER ===============*/
 header {
+  width: 100%;
+  overflow: hidden;
   margin-bottom: 5rem;
   display: flex;
   justify-content: space-between;
@@ -72,9 +80,25 @@ header .about p {
   font-weight: 400;
   line-height: 2.7rem;
 }
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    margin-bottom: 1.4rem;
+  }
+  header .logo {
+    margin-bottom: 3.8rem;
+  }
+  header .about p {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    max-width: 33.3rem;
+  }
+}
 
 /*=============== MAIN CONTENT ===============*/
 main {
+  width: 100%;
+  overflow: hidden;
   margin-bottom: 5rem;
 }
 main ul {
@@ -89,7 +113,6 @@ main ul .items {
 main ul .items img {
   width: 23.8rem;
   margin-bottom: 1.5rem;
-  margin-right: 1rem;
 }
 main ul .items h3 {
   font-size: 1.8rem;
@@ -109,6 +132,35 @@ main ul .items p {
 }
 main ul .items:nth-child(3n-1) {
   margin-top: 7.2rem;
+}
+@media (max-width: 480px) {
+  main ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main ul .items {
+    width: 17.5rem;
+    padding: 3rem 3rem 0.5rem 2rem;
+  }
+  main ul .items img {
+    width: 13.9rem;
+    margin-bottom: 0.5rem;
+  }
+  main ul .items h3 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  main ul .items p {
+    top: 3rem;
+    right: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  main ul .items:nth-child(3n-1) {
+    margin-top: 0;
+  }
+  main ul .items:nth-child(2n) {
+    margin-top: 4.5rem;
+  }
 }
 
 /*=============== FOOTER ===============*/

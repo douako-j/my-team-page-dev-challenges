@@ -4,6 +4,8 @@
 
 /*=============== HEADER ===============*/
 header {
+  width: 100%;
+  overflow: hidden;
   margin-bottom: 5rem;
   display: flex;
   justify-content: space-between;
@@ -36,10 +38,29 @@ header {
       line-height: 2.7rem;
     }
   }
+
+  @include xs {
+    flex-direction: column;
+    margin-bottom: 1.4rem;
+
+    .logo {
+      margin-bottom: 3.8rem;
+    }
+
+    .about {
+      p {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        max-width: 33.3rem;
+      }
+    }
+  }
 }
 
 /*=============== MAIN CONTENT ===============*/
 main {
+  width: 100%;
+  overflow: hidden;
   margin-bottom: 5rem;
 
   ul {
@@ -54,7 +75,6 @@ main {
       img {
         width: 23.8rem;
         margin-bottom: 1.5rem;
-        margin-right: 1rem;
       }
 
       h3 {
@@ -78,6 +98,42 @@ main {
 
     .items:nth-child(3n - 1) {
       margin-top: 7.2rem;
+    }
+  }
+
+  @include xs {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+
+      .items {
+        width: 17.5rem;
+        padding: 3rem 3rem 0.5rem 2rem;
+
+        img {
+          width: 13.9rem;
+          margin-bottom: 0.5rem;
+        }
+
+        h3 {
+          font-size: 1.4rem;
+          line-height: 2.1rem;
+        }
+
+        p {
+          top: 3rem;
+          right: 1.5rem;
+          font-size: 1rem;
+          line-height: 1.3rem;
+        }
+      }
+
+      .items:nth-child(3n - 1) {
+        margin-top: 0;
+      }
+
+      .items:nth-child(2n) {
+        margin-top: 4.5rem;
+      }
     }
   }
 }

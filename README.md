@@ -34,9 +34,10 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](./screenshot.png)
 
 - This project helped me work on my ability to read a Figma design file and transform it into code
+- I was able to improve my skill in css layout with flex and grid
 - I was also able to work on responsive design management with sass media mixins
 
 ### Built With
