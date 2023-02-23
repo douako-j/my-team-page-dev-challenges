@@ -1,0 +1,29 @@
+{
+  "name": "my-team-page-dev-challenges",
+  "version": "1.0.0",
+  "description": "Second challenge of the Responsive Web developer path on devchallenges.io",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douako-j/my-team-page-dev-challenges.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "RESPONSIVE",
+    "CHALLENGE"
+  ],
+  "author": "Jordan DOUAKOUTCHE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douako-j/my-team-page-dev-challenges/issues"
+  },
+  "homepage": "https://github.com/douako-j/my-team-page-dev-challenges#readme",
+  "dependencies": {
+    "sass": "^1.58.3"
+  }
+}

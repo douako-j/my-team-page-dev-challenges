@@ -1,0 +1,27 @@
+@import "variables";
+@import "media-queries";
+@import "bases";
+
+/*=============== HEADER ===============*/
+header {
+}
+
+/*=============== MAIN CONTENT ===============*/
+main {
+}
+
+/*=============== FOOTER ===============*/
+footer {
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  font-family: var(--montserrat-font);
+
+  p {
+    a {
+      color: inherit;
+    }
+  }
+}
